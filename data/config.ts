@@ -21,15 +21,15 @@ export const CONTENT: ContentConfig = {
     systems: [
         {
             id: "docs",
-            dir: "content/Notes/docs",
+            dir: "content/docs",
             defaultDocRedirect: "/docs/introduction",
             route: "/Notes/docs",
         },
         {
             id: "funnydocs",
-            dir: "content/Notes/funnydocs",
+            dir: "content/funnydocs",
             defaultDocRedirect: "/funnydocs/getting-started",
-            route: "/Notes/funnydocs",
+            route: "/funnydocs",
         },
     ],
 };

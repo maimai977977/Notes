@@ -4,7 +4,7 @@ import BaseLayout from "./BaseLayout.astro";
 import Breadcrumb from "@/components/docs/Breadcrumb.astro";
 import CodeCopyButton from "@/components/docs/CodeCopyButton.astro";
 import Sidebar from "@/components/docs/Sidebar.astro";
-import SourceButton from "@/components/docs/SourceButton.astro";
+// import SourceButton from "@/components/docs/SourceButton.astro";
 import TableOfContents from "@/components/docs/TableOfContents.astro";
 import { buildBreadcrumbItems } from "@/lib/docs/breadcrumb";
 import type { DocsLayoutProps, Heading } from "@/lib/docs/types";
@@ -61,7 +61,7 @@ const tableOfContentsHeadings = headings
                             )
                         }
                     </div>
-                    <SourceButton slug={frontmatter.id} collectionId={collectionId} />
+                    <!-- <SourceButton slug={frontmatter.id} collectionId={collectionId} /> -->
                 </div>
             </div>
             <article class="prose prose-slate dark:prose-invert min-w-0">
