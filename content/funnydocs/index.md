@@ -19,3 +19,4 @@ navHidden: true
 - 😵 [Concepts](/funnydocs/concepts) - Things we made up to sound smart.
 - 🔥 [Configuration](/funnydocs/configuration) - YAML Hell awaits.
 - 🚢 [Deployment](/funnydocs/deployment) - It works on my machine.
+- 🚢 [jquery](/funnydocs/heima) - It works on my machine.

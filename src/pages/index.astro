@@ -4,18 +4,18 @@ import { Icon } from "astro-icon/components";
 import { Button } from "@/components/ui/button";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
-const HERO_TITLE = "CelestialDocs";
+const HERO_TITLE = "MaimaiNote";
 const HERO_SUBTITLE =
     "A modern, type-safe documentation system with hierarchical navigation, hybrid generation, and multi-collection support.";
-const CTA_PRIMARY = { href: "/docs/introduction", label: "View Documentation" };
+const CTA_PRIMARY = { href: "/docs", label: "View Documentation" };
 const CTA_SECONDARY = {
-    href: "https://github.com/HYP3R00T/CelestialDocs",
+    href: "https://maimai977977.github.io/",
     label: "View on GitHub",
 };
 ---
 
 <BaseLayout
-    title={`${HERO_TITLE} - Modern documentation template`}
+    title={`${HERO_TITLE}`}
     description={HERO_SUBTITLE}
     image="/docs-hero.jpg"
     imageAlt="CelestialDocs documentation template hero"
@@ -30,90 +30,94 @@ const CTA_SECONDARY = {
                     {HERO_TITLE}
                 </h1>
                 <p class="text-muted-foreground mx-auto max-w-2xl text-xl">
-                    Modern documentation that scales with your project
+                    This is the note-taking website of Maimai
                 </p>
             </div>
 
             <div class="flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Button size="lg">
-                    <a href={CTA_PRIMARY.href}>Get Started</a>
+                    <a href={CTA_PRIMARY.href}>进入笔记</a>
                 </Button>
-                <Button size="lg" variant="secondary">
+
+                {
+                    /* JS 注释语法也是有效的
+                  <Button size="lg" variant="secondary">
                     <a
                         href={CTA_SECONDARY.href}
                         target="_blank"
                         class="flex flex-row items-center gap-3"
                     >
-                        View on GitHub
+                        View on Blog
                         <Icon name="github" />
                     </a>
-                </Button>
+                </Button>*/
+                }
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
     <section class="mx-auto max-w-6xl px-5 py-8 sm:py-12">
-        <div class="mb-12 text-center">
+        <!-- HTML 注释语法在.astro 文件中是有效的         <div class="mb-12 text-center">
             <h2 class="text-foreground pb-4 text-3xl font-bold sm:text-4xl">Everything you need</h2>
             <p class="text-muted-foreground mt-3 text-lg">
                 Built with best practices and developer experience in mind
             </p>
-        </div>
-
+        </div> -->
+        <hr />
+        <br />
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <div class="bg-popover space-y-3 rounded-lg p-6">
                 <div class="text-3xl">🧭</div>
-                <h3 class="text-foreground text-lg font-semibold">Smart Navigation</h3>
+                <h3 class="text-foreground text-lg font-semibold">智能导航</h3>
                 <p class="text-muted-foreground text-sm">
-                    Hierarchical structure with tabs, groups, and breadcrumbs keeps users oriented
+                    采用标签、分组和面包屑导航的层级结构帮助用户保持方向感
                 </p>
             </div>
 
             <div class="bg-popover space-y-3 rounded-lg p-6">
                 <div class="text-3xl">⚡</div>
-                <h3 class="text-foreground text-lg font-semibold">Fast Setup</h3>
-                <p class="text-muted-foreground text-sm">
-                    Auto-generate or configure manually, your choice
-                </p>
+                <h3 class="text-foreground text-lg font-semibold">快速设置</h3>
+                <p class="text-muted-foreground text-sm">自动生成还是手动配置，由您选择。</p>
             </div>
 
             <div class="bg-popover space-y-3 rounded-lg p-6">
                 <div class="text-3xl">🔒</div>
-                <h3 class="text-foreground text-lg font-semibold">Type Safe</h3>
+                <h3 class="text-foreground text-lg font-semibold">类型安全</h3>
                 <p class="text-muted-foreground text-sm">
-                    Strict TypeScript and Zod validation catch errors before deployment
+                    严格使用 TypeScript 和 Zod 进行验证，可在部署前捕获错误
                 </p>
             </div>
 
             <div class="bg-popover space-y-3 rounded-lg p-6">
                 <div class="text-3xl">🗂️</div>
-                <h3 class="text-foreground text-lg font-semibold">Multi-Collection</h3>
+                <h3 class="text-foreground text-lg font-semibold">多集合</h3>
                 <p class="text-muted-foreground text-sm">
-                    Separate docs, guides, and API references with independent navigation
+                    将文档、指南和 API 参考内容分开管理，并提供独立的导航功能
                 </p>
             </div>
 
             <div class="bg-popover space-y-3 rounded-lg p-6">
                 <div class="text-3xl">📝</div>
-                <h3 class="text-foreground text-lg font-semibold">MDX Support</h3>
+                <h3 class="text-foreground text-lg font-semibold">MDX 支持</h3>
                 <p class="text-muted-foreground text-sm">
-                    Write in Markdown with the power of React components
+                    使用带有 React 组件功能的 Markdown 格式进行编写
                 </p>
             </div>
 
             <div class="bg-popover space-y-3 rounded-lg p-6">
                 <div class="text-3xl">🎨</div>
-                <h3 class="text-foreground text-lg font-semibold">Beautiful UI</h3>
+                <h3 class="text-foreground text-lg font-semibold">美观的用户界面</h3>
                 <p class="text-muted-foreground text-sm">
-                    Dark mode, responsive design, and accessible by default
+                    暗黑模式、响应式设计，且默认支持无障碍访问功能
                 </p>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="mx-auto w-full max-w-6xl px-5 py-8 sm:py-12">
+
+    <!-- HTML 注释语法在.astro 文件中是有效的     <section class="mx-auto w-full max-w-6xl px-5 py-8 sm:py-12">
         <div class="mb-4 text-center">
             <h2 class="text-foreground pb-4 text-3xl font-bold sm:text-4xl">
                 Ready to get started?
@@ -136,5 +140,7 @@ const CTA_SECONDARY = {
                 </a>
             </Button>
         </div>
-    </section>
+    </section>-->
+
+    <hr />
 </BaseLayout>

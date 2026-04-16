@@ -46,4 +46,6 @@ export default defineConfig({
         react(),
         sitemap(),
     ],
+    //关闭调试工具栏
+    //npm run astro preferences disable devToolbar
 });
