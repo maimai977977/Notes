@@ -10,7 +10,8 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://celestialdocs.hyperoot.dev",
+    site: 'https://maimai977977.github.io',
+    // base: '/Notes',
     prefetch: true,
     vite: {
         plugins: [tailwindcss()],
@@ -46,6 +47,4 @@ export default defineConfig({
         react(),
         sitemap(),
     ],
-    //关闭调试工具栏
-    //npm run astro preferences disable devToolbar
 });

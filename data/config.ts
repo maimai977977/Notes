@@ -64,9 +64,9 @@ export const HEADER_NAV_ITEMS: NavItem[] = [
 export const HEADER_SOCIAL_LINKS: SocialObjects[] = [
     {
         name: "github",
-        href: "https://github.com/HYP3R00T/",
+        href: "https://github.com/maimai977977/",
         linkTitle: `Checkout my GitHub profile`,
-        active: false,
+        active: true,
     },
 ];
 
