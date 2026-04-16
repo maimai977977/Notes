@@ -10,8 +10,8 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://maimai977977.github.io/Notes',
-    // base: '/Notes/',
+    site: 'https://maimai977977.github.io',
+    base: '/Notes/',
     prefetch: true,
     vite: {
         plugins: [tailwindcss()],
