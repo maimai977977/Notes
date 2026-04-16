@@ -21,15 +21,15 @@ export const CONTENT: ContentConfig = {
     systems: [
         {
             id: "docs",
-            dir: "content/docs",
+            dir: "content/Notes/docs",
             defaultDocRedirect: "/docs/introduction",
-            route: "/docs",
+            route: "/Notes/docs",
         },
         {
             id: "funnydocs",
-            dir: "content/funnydocs",
+            dir: "content/Notes/funnydocs",
             defaultDocRedirect: "/funnydocs/getting-started",
-            route: "/funnydocs",
+            route: "/Notes/funnydocs",
         },
     ],
 };
@@ -57,8 +57,8 @@ export const HEADER_FEATURES: HeaderFeatures = {
 };
 
 export const HEADER_NAV_ITEMS: NavItem[] = [
-    { href: "/docs", label: "文件夹" },
-    { href: "/funnydocs", label: "心情" },
+    { href: "/Notes/docs", label: "文件夹" },
+    { href: "/Notes/funnydocs", label: "心情" },
 ];
 
 export const HEADER_SOCIAL_LINKS: SocialObjects[] = [
